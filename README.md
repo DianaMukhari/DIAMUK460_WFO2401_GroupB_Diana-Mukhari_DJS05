@@ -1,5 +1,32 @@
 # DJS05 Project Brief: Building a Redux-Inspired Store for a Tally App
 
+
+
+
+
+
+Initial State: The initial state is defined with count set to 0.
+Action Types: Constants for ADD, SUBTRACT, and RESET actions are defined.
+Action Creators: Functions that return action objects are created.
+Reducer: The reducer function updates the state based on the action type.
+Store: The Store class has methods for getState, dispatch, and subscribe. The dispatch method updates the state and notifies all subscribed listeners. The subscribe method adds listeners that get called whenever the state changes.
+State Management Demonstration: The render function logs the current state. It is called initially and every time the state changes. Actions are dispatched to demonstrate different scenarios.
+This implementation showcases a simple global state management system inspired by Redux, with state changes being logged to the console to verify the functionality.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 In this challenge, you will venture into the realm of state management by constructing a Redux-inspired store to manage the state of a simple Tally App. Your primary goal is to manage the app's state changes efficiently, focusing on core functionalities like incrementing, decrementing, and resetting a counter. Instead of rendering changes on the UI, you'll subscribe to state updates and log them to the console, highlighting the power of state management in applications.
 
 ## Objective
