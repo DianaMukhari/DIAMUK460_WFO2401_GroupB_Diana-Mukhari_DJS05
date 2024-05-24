@@ -66,22 +66,21 @@ const store = new Store(reducer, initialState);
 
 // Function to log the current count in the state to the console.
 const render = () => {
-  console.log(store.getState().count);
-};
-
+    console.log("Count: ", store.getState().count);
+  };
 // Subscribe the render function to state changes in the store.
 store.subscribe(render);
 
 // Log the initial state and perform actions to demonstrate state management.
-console.log('Scenario 1:Initial state');
-render(); 
+console.log('Scenario 1: Initial state');
+render();
 
-console.log('Scenario 2: Incrementing ');
-store.dispatch(add()); 
-store.dispatch(add()); 
+console.log('Scenario 2: Incrementing');
+store.dispatch(add());
+store.dispatch(add());
 
 console.log('Scenario 3: Decrementing');
-store.dispatch(subtract()); 
+store.dispatch(subtract());
 
 console.log('Scenario 4: Resetting');
-store.dispatch(reset()); 
+store.dispatch(reset());
